@@ -98,10 +98,11 @@ h4 {
   padding: 50px 15px 20px;
   background: linear-gradient(
     to top,
-    #91ccf4 90%,
-    rgba(250, 250, 250, 0) 90% 10%
+    #91ccf4 95%,
+    rgba(250, 250, 250, 0) 95% 5%
   );
   border-radius: 3px;
+  border: 1px solid black;
 }
 .menu__list-item:hover .menu__sublist {
   display: block;
