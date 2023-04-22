@@ -48,9 +48,14 @@ h4 {
 
 .header {
   background-color: #91ccf4;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
 }
 .header__inner {
-  padding: 10px 0;
+  padding: 6px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -176,9 +181,10 @@ h4 {
 
 .footer {
   background-color: #91ccf4;
+  padding-bottom: 20px;
 }
 .footer__inner {
-  padding: 40px 0;
+  padding: 40px 0 10px;
   display: flex;
   justify-content: space-between;
 }
@@ -235,17 +241,11 @@ h4 {
 .footer__phone-link:hover {
   color: #fff4f4;
 }
-.footer__whatsapp-link,
-.footer__viber-link {
-  display: inline-block;
-  border-radius: 50%;
-  transition: 0.3s all;
-}
-.footer__whatsapp-link:focus,
-.footer__viber-link:focus,
-.footer__whatsapp-link:hover,
-.footer__viber-link:hover {
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+.footer__law {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #170f49;
 }
 
 /* footer styles end */
@@ -262,7 +262,8 @@ h4 {
 /* top styles start */
 
 .top {
-  padding: 130px 0;
+  margin-top: 87px;
+  padding: 120px 0;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -418,6 +419,7 @@ h4 {
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
   text-align: left;
   transition: 0.4s all;
+  position: relative;
 }
 .product__card:focus,
 .product__card:hover {
@@ -451,6 +453,11 @@ h4 {
   margin: auto 0 0 0;
   background: url(../images/arrow-end-right.svg) 92% 50% no-repeat;
   transition: 0.3s all;
+}
+.product__card-link::before {
+  content: "";
+  position: absolute;
+  inset: 0;
 }
 .product__card-link:focus,
 .product__card-link:hover {
@@ -488,7 +495,7 @@ h4 {
   margin-bottom: 50px;
 }
 .bmvd__card {
-  min-height: 319px;
+  min-height: 300px;
 }
 
 /* products styles end */
