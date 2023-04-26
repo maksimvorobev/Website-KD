@@ -156,23 +156,24 @@ h4 {
   font-weight: 400;
   font-size: 17px;
 }
-.header__phone-link {
-  border-bottom: 0.5px solid #170f49;
-  transition: 0.4s all;
+.header__link {
+  position: relative;
+  transition: 0.3s all;
 }
-.header__phone-link:focus,
-.header__phone-link:hover {
-  border-bottom: 0.5px solid #fff4f4;
-  color: #fff4f4;
+.header__link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #fff4f4;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
 }
-.header__mail-link {
-  border-bottom: 0.5px solid #170f49;
-  transition: 0.2s all;
-}
-.header__mail-link:focus,
-.header__mail-link:hover {
-  border-bottom: 0.5px solid #fff4f4;
-  color: #fff4f4;
+.header__link:focus::after,
+.header__link:hover::after {
+  width: 100%;
 }
 
 /* header styles end */
