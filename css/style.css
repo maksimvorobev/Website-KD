@@ -254,8 +254,24 @@ h4 {
 /* main styles start */
 
 .main {
+  margin-top: 87px;
   flex-grow: 1;
   background-color: #ececec;
+}
+.not-found {
+  padding: 80px 0;
+  text-align: center;
+}
+.not-found__img {
+  margin-bottom: 15px;
+}
+.not-found__num {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.not-found__text {
+  font-size: 22px;
 }
 
 /* main styles end */
@@ -263,7 +279,6 @@ h4 {
 /* top styles start */
 
 .top {
-  margin-top: 87px;
   padding: 120px 0;
   background-repeat: no-repeat;
   background-size: cover;
@@ -384,10 +399,10 @@ h4 {
   margin-left: -15px;
 }
 
-.combi {
+.kombi {
   margin-bottom: 96px;
 }
-.combi__title {
+.kombi__title {
   padding-bottom: 11px;
   font-weight: 400;
   font-size: 42px;
@@ -395,7 +410,7 @@ h4 {
   margin-bottom: 60px;
   position: relative;
 }
-.combi__title::after {
+.kombi__title::after {
   content: "";
   display: block;
   width: 274px;
@@ -407,7 +422,7 @@ h4 {
   left: 50%;
   margin-left: -137px;
 }
-.combi__cards {
+.kombi__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
