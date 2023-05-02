@@ -402,6 +402,7 @@ h4 {
   margin-bottom: 96px;
 }
 .kombi__title {
+  display: inline-block;
   padding-bottom: 11px;
   font-weight: 400;
   font-size: 42px;
@@ -412,14 +413,13 @@ h4 {
 .kombi__title::after {
   content: "";
   display: block;
-  width: 274px;
+  width: 100%;
   height: 3px;
   border-radius: 15px;
   background-color: #0037aa;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  margin-left: -137px;
+  left: 0;
 }
 .kombi__cards {
   display: grid;
@@ -430,6 +430,7 @@ h4 {
 
 .product__card {
   display: flex;
+  width: 295px;
   background-color: #ffffff;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
   text-align: left;
@@ -484,6 +485,7 @@ h4 {
   margin-bottom: 60px;
 }
 .bmvd__title {
+  display: inline-block;
   padding-bottom: 12px;
   font-weight: 400;
   font-size: 42px;
@@ -494,14 +496,13 @@ h4 {
 .bmvd__title::after {
   content: "";
   display: block;
-  width: 130px;
+  width: 100%;
   height: 3px;
   border-radius: 15px;
   background-color: #0037aa;
   position: absolute;
   bottom: 0;
-  left: 50%;
-  margin-left: -65px;
+  left: 0;
 }
 .bmvd__cards {
   display: grid;
@@ -511,6 +512,7 @@ h4 {
 }
 .bmvd__card {
   min-height: 300px;
+  width: auto;
 }
 
 /* products styles end */
@@ -704,6 +706,7 @@ h4 {
 /* contacts-form styles end */
 
 /* map styles start */
+
 .map {
   padding-bottom: 100px;
   text-align: center;
@@ -716,3 +719,28 @@ h4 {
 }
 
 /* map styles end */
+
+/* pticevodstvo styles start */
+
+.pticy__cards {
+  grid-template:
+    "a a b b c c d d"
+    ". . . e e . . .";
+}
+.pticy__card:nth-child(1) {
+  grid-area: a;
+}
+.pticy__card:nth-child(2) {
+  grid-area: b;
+}
+.pticy__card:nth-child(3) {
+  grid-area: c;
+}
+.pticy__card:nth-child(4) {
+  grid-area: d;
+}
+.pticy__card:nth-child(5) {
+  grid-area: e;
+}
+
+/* pticevodstvo styles end */
