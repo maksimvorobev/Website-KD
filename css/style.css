@@ -720,6 +720,232 @@ h4 {
 
 /* map styles end */
 
+/* about styles start */
+.about__caption {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 25px;
+  color: #170f49;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+.about__caption::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #f3d24f;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.history {
+  padding: 70px 0;
+  text-align: center;
+}
+.history__title {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 64px;
+  margin-bottom: 20px;
+}
+.history__text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.stats {
+  background-color: #170f49;
+  padding: 60px;
+}
+.stats__cards {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 90px;
+}
+.stats__card {
+  text-align: center;
+}
+.stats__card-img {
+  margin-bottom: 20px;
+}
+.stats__card-num {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.stats__card-text {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.about {
+  background-color: #fff;
+  padding: 140px 10px;
+}
+.about__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 10px;
+}
+.about__card_main {
+  max-width: 580px;
+}
+.about__title {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 64px;
+}
+.about__card-text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 38px;
+  color: #000000;
+}
+.about__card_extra {
+  max-width: 580px;
+  padding: 60px 50px;
+  background-color: #fbe48d;
+  border-left: 6px solid #ffce20;
+}
+.about__card-text_extra {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 38px;
+  color: #000000;
+}
+
+.benefits {
+  padding: 120px 10px;
+  text-align: center;
+}
+.benefits__titles {
+  max-width: 630px;
+  margin: 0 auto 77px;
+}
+.benefits__title {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 64px;
+}
+.benefits__cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 19px;
+  margin-bottom: 90px;
+}
+.benefits__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.benefits__card-img {
+  align-self: center;
+  margin-bottom: 20px;
+}
+.benefits__card-title {
+  text-transform: uppercase;
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.benefits__card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #000000;
+}
+.benefits__link {
+  display: inline-block;
+  background: #f3d24f url(../images/arrow.svg) 90% 50% no-repeat;
+  padding: 28px 73px 26px 34px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  border-radius: 76px;
+  transition: 0.3s all;
+}
+.benefits__link:focus,
+.benefits__link:hover {
+  background: #f3d24f url(../images/arrow.svg) 93% 50% no-repeat;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.targets {
+  padding: 90px 0 150px;
+  text-align: center;
+  background-color: #170f49;
+  margin-bottom: 350px;
+}
+.targets__inner {
+  max-width: 966px;
+  margin: 0 auto;
+  position: relative;
+}
+.targets__titles {
+  max-width: 630px;
+  margin: 0 auto;
+}
+.targets__caption {
+  color: #ffffff;
+}
+.targets__title {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 64px;
+  color: #ffffff;
+}
+.targets__cards {
+  max-width: 966px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 38px;
+  position: absolute;
+  top: 150%;
+  left: 0;
+}
+.targets__card {
+  min-height: 259px;
+  max-width: 213px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.targets__card-num {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 64px;
+  margin-bottom: 16px;
+}
+.targets__card-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* about styles end */
+
 /* pticevodstvo styles start */
 
 .pticy__cards {
