@@ -96,7 +96,10 @@
               </ul>
             </nav>
             <div class="header__info">
-              <button class="header__feedback-btn">Обратная связь</button>
+              <button class="header__feedback-btn popup__open">
+                Обратная связь
+              </button>
+
               <div class="header__links">
                 <a href="tel:+73912922231" class="header__link"
                   >+7 (391) 292-22-31</a
@@ -486,6 +489,61 @@
         </div>
       </footer>
     </div>
+
+    <div class="popup">
+      <div class="popup__body">
+        <h4 class="contacts-form__title">Свяжитесь с нами</h4>
+        <p class="contacts-form__description">
+          Если Вы хотите оставить заявку, задать вопрос или связаться с нами -
+          заполните форму.
+        </p>
+        <form action="#" class="form">
+          <div class="forms__group">
+            <div class="form__group">
+              <label for="name" class="form__lable">Имя</label>
+              <input type="text" class="form__input" placeholder="Алексей" />
+            </div>
+            <div class="form__group">
+              <label for="email" class="form__lable"
+                >Адрес электронной почты</label
+              >
+              <input
+                type="email"
+                class="form__input"
+                placeholder="example@gmail.com"
+              />
+            </div>
+            <div class="form__group">
+              <label for="tel" class="form__lable">Номер телефона</label>
+              <input
+                type="tel"
+                class="form__input"
+                placeholder="+ 7 (391) 292-22-31"
+              />
+            </div>
+            <div class="form__group">
+              <label for="topic" class="form__lable">Тема обращения</label>
+              <input
+                type="text"
+                class="form__input"
+                placeholder="Помощь с выбором"
+              />
+            </div>
+            <div class="form__group textarea__group">
+              <label for="text" class="form__lable">Дополнения</label>
+              <textarea
+                name="text"
+                class="form__textarea"
+                placeholder="Здравствуйте, хотелось бы проконсультироваться..."
+              ></textarea>
+            </div>
+            <button class="form__btn" type="submit">ОТПРАВИТЬ СООБЩЕНИЕ</button>
+          </div>
+        </form>
+        <div class="popup__close">&#10006;</div>
+      </div>
+    </div>
+
     <script src="js/main.js"></script>
   </body>
 </html>

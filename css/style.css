@@ -51,8 +51,8 @@ h4 {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 999;
+  width: 100vw;
+  z-index: 100;
 }
 .header__inner {
   padding: 6px 0;
@@ -142,8 +142,8 @@ h4 {
   user-select: none;
   appearance: none;
   transition: 0.4s all;
+  position: relative;
 }
-.header__feedback-btn:focus,
 .header__feedback-btn:hover {
   box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
@@ -275,6 +275,38 @@ h4 {
 }
 
 /* main styles end */
+
+/* popup styles start */
+
+.popup {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  padding: 30px;
+}
+.popup__body {
+  margin: auto;
+  max-width: 716px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 50px;
+  position: relative;
+}
+.popup__close {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* popup styles end */
 
 /* top styles start */
 
