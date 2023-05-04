@@ -721,7 +721,7 @@ h4 {
 /* map styles end */
 
 /* about styles start */
-.about__caption {
+.caption {
   display: inline-block;
   text-transform: uppercase;
   font-weight: 500;
@@ -732,7 +732,7 @@ h4 {
   padding-left: 40px;
   margin-bottom: 10px;
 }
-.about__caption::before {
+.caption::before {
   content: "";
   display: block;
   width: 25px;
@@ -947,6 +947,54 @@ h4 {
 }
 
 /* about styles end */
+
+/* contacts styles start */
+
+.contacts__titles {
+  text-align: center;
+  padding: 100px 0 40px;
+  max-width: 630px;
+  margin: 0 auto;
+}
+.contacts__title {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 64px;
+}
+.contacts {
+  background-color: #170f49;
+  padding: 60px 0;
+  margin-bottom: 150px;
+}
+.contacts__inner {
+  background-color: #ffffff;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 23px 30px;
+  border-radius: 27px;
+}
+.contacts__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.contacts__info-text {
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 25px;
+  color: #000000;
+}
+.contacts__links {
+  text-align: center;
+}
+.contacts__links-viber {
+  margin-right: 20px;
+}
+
+/* contacts styles end */
 
 /* pticevodstvo styles start */
 
