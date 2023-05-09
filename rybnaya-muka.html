@@ -108,15 +108,351 @@
         </div>
       </header>
       <main class="main">
-        <section class="not-found">
+        <section class="item">
           <div class="container">
-            <img
-              src="images/not-found-chicken.svg"
-              alt=""
-              class="not-found__img"
-            />
-            <p class="not-found__num">404</p>
-            <p class="not-found__text">К сожалению, этой страницы нет</p>
+            <div class="item__inner">
+              <h1 class="item__title">Рыбная мука</h1>
+              <div class="item__desc">
+                <img src="images/item-img.png" alt="" class="item__img" />
+                <div class="item___desc-container">
+                  <ul class="item__desc-list">
+                    <li>Повышает питательные свойства корма</li>
+                    <li>Повышает иммунитет</li>
+                    <li>Сокращает период откорма</li>
+                    <li>
+                      Обеспечивает нормализацию функции обмена веществ организма
+                      животных
+                    </li>
+                  </ul>
+                  <div class="item__desc-properties">
+                    <div class="item__desc-property">
+                      <p
+                        class="item__desc-property-text item__desc-property-text_name"
+                      >
+                        <b>Название:</b> Рыбная мука
+                      </p>
+                    </div>
+                    <div class="item__desc-property">
+                      <p
+                        class="item__desc-property-text item__desc-property-text_form"
+                      >
+                        <b>Форма выпуска:</b> Россыпь
+                      </p>
+                    </div>
+                    <div class="item__desc-property">
+                      <p
+                        class="item__desc-property-text item__desc-property-text_pack"
+                      >
+                        <b>Упаковка:</b> 5 кг / 10 кг / 25 кг
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="item-info">
+          <div class="container">
+            <p class="caption">ПОДРОБНАЯ ИНФОРМАЦИЯ</p>
+            <div class="tabs">
+              <div class="tabs__btn">
+                <button
+                  class="tabs__btn-item tabs__btn-item_active"
+                  data-button="content-1"
+                >
+                  ПИТАТЕЛЬНОСТЬ
+                </button>
+                <button class="tabs__btn-item" data-button="content-2">
+                  СОСТАВ
+                </button>
+                <button class="tabs__btn-item" data-button="content-3">
+                  РЕКОМЕНДАЦИИ ПО КОРМЛЕНИЮ
+                </button>
+                <button class="tabs__btn-item" data-button="content-4">
+                  ПРЕИМУЩЕСТВА
+                </button>
+              </div>
+              <div class="tabs__content">
+                <div
+                  id="content-1"
+                  class="tabs__content-item tabs__content-item_active"
+                >
+                  <table class="table-properties">
+                    <thead>
+                      <tr>
+                        <th>Основные показатели питательности</th>
+                        <th>Пищевая ценность</th>
+                        <th>Единицы</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Обменная энергия, мин</td>
+                        <td>3200</td>
+                        <td>Ккал/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Сырой протеин</td>
+                        <td>35-40</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Массовая доля жира</td>
+                        <td>14-18</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Кальций</td>
+                        <td>1,9-3,5</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Натрий</td>
+                        <td>0,8-1,2</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Сера</td>
+                        <td>0,4-0,8</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Фосфор</td>
+                        <td>1,4-1,9</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Медь</td>
+                        <td>12-14</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Цинк</td>
+                        <td>75-85</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Железо</td>
+                        <td>95-120</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Магний</td>
+                        <td>1,0-1,5</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Кобальт</td>
+                        <td>0,06-0,08</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Марганец</td>
+                        <td>15-20</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Калий</td>
+                        <td>0,8-1,2</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Йод</td>
+                        <td>1,6-1,9</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Витамин B1</td>
+                        <td>1,0-1,2</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Витамин B4</td>
+                        <td>2000-2200</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Витамин B2</td>
+                        <td>3,0-3,6</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Витамин B5</td>
+                        <td>60,0-66,0</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Витамин B3</td>
+                        <td>10,0-12,0</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Витамин B6</td>
+                        <td>8,0-12,0</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Витамин D</td>
+                        <td>40,0-45,0</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Витамин E</td>
+                        <td>17,0-20,0</td>
+                        <td>мг/кг</td>
+                      </tr>
+                      <tr>
+                        <td>Аспарагиновая к-та</td>
+                        <td>4550</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Пролин</td>
+                        <td>1025</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Изолейцин</td>
+                        <td>1920</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Треонин</td>
+                        <td>3007</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Глицин</td>
+                        <td>4400</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Лейцин</td>
+                        <td>3630</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Серин</td>
+                        <td>5713</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Аланин</td>
+                        <td>3160</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Тирозин</td>
+                        <td>1390</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Глутаминовая к-та</td>
+                        <td>7600</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Валин</td>
+                        <td>1935</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Фенилаланин</td>
+                        <td>2335</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Гистидин</td>
+                        <td>485</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Лизин</td>
+                        <td>1709</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Аргинин</td>
+                        <td>3440</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Триптофан</td>
+                        <td>400</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                      <tr>
+                        <td>Оксипролин</td>
+                        <td>197</td>
+                        <td>мг/100 г</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="content-2" class="tabs__content-item"></div>
+
+                <div id="content-3" class="tabs__content-item">
+                  <table class="table-properties table-properties_recommend">
+                    <thead>
+                      <tr>
+                        <th colspan="2">Норма ввода в рацион</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Куры-несушки, бройлеры, утки, гуси</td>
+                        <td>от 5 до 20 %</td>
+                      </tr>
+                      <tr>
+                        <td>КРС, овцы, козы</td>
+                        <td>до 10 %</td>
+                      </tr>
+                      <tr>
+                        <td>Собаки</td>
+                        <td>до 20 %</td>
+                      </tr>
+                      <tr>
+                        <td>Свиньи</td>
+                        <td>от 5 до 20 %</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="table-properties table-properties_recommend">
+                    <thead>
+                      <tr>
+                        <th>Рекомендации</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Перед раздачей корма рыбную протеиновую добавку
+                          смешать с сухим или влажным кормом
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Передозировка рыбной добавки не вредна, просто не
+                          эффективна
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="content-4" class="tabs__content-item">
+                  <ul>
+                    <li>Повышает питательные свойства корма</li>
+                    <li>Повышает иммунитет</li>
+                    <li>Сокращает период откорма</li>
+                    <li>
+                      Обеспечивает нормализацию функции обмена веществ организма
+                      животных
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

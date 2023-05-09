@@ -108,15 +108,167 @@
         </div>
       </header>
       <main class="main">
-        <section class="not-found">
+        <section class="item">
           <div class="container">
-            <img
-              src="images/not-found-chicken.svg"
-              alt=""
-              class="not-found__img"
-            />
-            <p class="not-found__num">404</p>
-            <p class="not-found__text">К сожалению, этой страницы нет</p>
+            <div class="item__inner">
+              <h1 class="item__title">Мясо+кровь</h1>
+              <div class="item__desc">
+                <img src="images/item-img.png" alt="" class="item__img" />
+                <div class="item___desc-container">
+                  <ul class="item__desc-list">
+                    <li>Повышает питательные свойства корма</li>
+                    <li>Повышает иммунитет</li>
+                    <li>Сокращает период откорма</li>
+                    <li>
+                      Обеспечивает нормализацию функции обмена веществ организма
+                      животных
+                    </li>
+                  </ul>
+                  <div class="item__desc-properties">
+                    <div class="item__desc-property">
+                      <p
+                        class="item__desc-property-text item__desc-property-text_name"
+                      >
+                        <b>Название:</b> Мясо+кровь
+                      </p>
+                    </div>
+                    <div class="item__desc-property">
+                      <p
+                        class="item__desc-property-text item__desc-property-text_form"
+                      >
+                        <b>Форма выпуска:</b> Россыпь
+                      </p>
+                    </div>
+                    <div class="item__desc-property">
+                      <p
+                        class="item__desc-property-text item__desc-property-text_pack"
+                      >
+                        <b>Упаковка:</b> 5 кг / 10 кг / 25 кг
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="item-info">
+          <div class="container">
+            <p class="caption">ПОДРОБНАЯ ИНФОРМАЦИЯ</p>
+            <div class="tabs">
+              <div class="tabs__btn">
+                <button
+                  class="tabs__btn-item tabs__btn-item_active"
+                  data-button="content-1"
+                >
+                  ПИТАТЕЛЬНОСТЬ
+                </button>
+                <button class="tabs__btn-item" data-button="content-2">
+                  СОСТАВ
+                </button>
+                <button class="tabs__btn-item" data-button="content-3">
+                  РЕКОМЕНДАЦИИ ПО КОРМЛЕНИЮ
+                </button>
+                <button class="tabs__btn-item" data-button="content-4">
+                  ПРЕИМУЩЕСТВА
+                </button>
+              </div>
+              <div class="tabs__content">
+                <div
+                  id="content-1"
+                  class="tabs__content-item tabs__content-item_active"
+                >
+                  <table class="table-properties">
+                    <thead>
+                      <tr>
+                        <th>Основные показатели питательности</th>
+                        <th>Пищевая ценность</th>
+                        <th>Единицы</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Сырой протеин</td>
+                        <td>40-45</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Жир</td>
+                        <td>10-15</td>
+                        <td>%</td>
+                      </tr>
+                      <tr>
+                        <td>Влажность, макс</td>
+                        <td>10</td>
+                        <td>%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="content-2" class="tabs__content-item"></div>
+
+                <div id="content-3" class="tabs__content-item">
+                  <table class="table-properties table-properties_recommend">
+                    <thead>
+                      <tr>
+                        <th colspan="2">Норма ввода в рацион</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Куры-несушки, бройлеры, утки, гуси</td>
+                        <td>от 5 до 15 %</td>
+                      </tr>
+                      <tr>
+                        <td>КРС, овцы, козы</td>
+                        <td>до 10 %</td>
+                      </tr>
+                      <tr>
+                        <td>Собаки</td>
+                        <td>до 20 %</td>
+                      </tr>
+                      <tr>
+                        <td>Свиньи</td>
+                        <td>от 5 до 15 %</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <table class="table-properties table-properties_recommend">
+                    <thead>
+                      <tr>
+                        <th>Рекомендации</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          Перед раздачей смешать мясную протеиновую добавку с
+                          сухим или влажным кормом
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          После ввода добавки не подвергать корм тепловой
+                          обработке, чтобы исключить потерю белка, витаминов,
+                          минералов
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div id="content-4" class="tabs__content-item">
+                  <ul>
+                    <li>Повышает питательные свойства корма</li>
+                    <li>Повышает иммунитет</li>
+                    <li>Сокращает период откорма</li>
+                    <li>
+                      Обеспечивает нормализацию функции обмена веществ организма
+                      животных
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
