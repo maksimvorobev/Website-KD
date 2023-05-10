@@ -415,7 +415,7 @@ h4 {
   font-weight: 400;
   font-size: 19px;
   line-height: 38px;
-  max-width: 700px;
+  max-width: 730px;
   position: relative;
   padding-bottom: 60px;
 }
@@ -465,6 +465,7 @@ h4 {
 
 .product__card {
   display: flex;
+  justify-content: space-between;
   width: 295px;
   background-color: #ffffff;
   box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.25);
@@ -1007,7 +1008,7 @@ h4 {
 }
 .contacts__inner {
   background-color: #ffffff;
-  max-width: 300px;
+  max-width: 320px;
   margin: 0 auto;
   padding: 23px 30px;
   border-radius: 27px;
@@ -1016,7 +1017,7 @@ h4 {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
   margin-bottom: 20px;
 }
 .contacts__info-text {
