@@ -1063,8 +1063,8 @@ h4 {
 /* brojler styles start */
 
 .brojler__cards {
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 130px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 300px;
 }
 .brojler__card {
   flex-direction: column-reverse;
@@ -1090,8 +1090,8 @@ h4 {
 /* nesushka styles start */
 
 .nesushka__cards {
-  grid-template-columns: repeat(2, 1fr);
-  padding: 0 300px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 0 130px;
 }
 .nesushka__card {
   flex-direction: column-reverse;
@@ -1135,6 +1135,12 @@ h4 {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
+}
+.item__img-inner {
+  max-width: 360px;
+}
+.item__img {
+  max-width: 100%;
 }
 .item__desc-list {
   max-width: 600px;
