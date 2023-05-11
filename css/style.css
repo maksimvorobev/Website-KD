@@ -1060,29 +1060,39 @@ h4 {
 
 /* pticevodstvo styles end */
 
+.product__item-card {
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.product__item-card-textbox {
+  padding: 30px 13px;
+  height: 100%;
+  width: 100%;
+}
+.product__item-card-title {
+  text-align: center;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+.product__item-card-img {
+  padding-top: 10px;
+  object-fit: none;
+}
+
+/* kroliki styles start */
+
+.kroliki__cards {
+  grid-template-columns: repeat(1, 1fr);
+  padding: 0 300px;
+}
+
+/* kroliki styles end */
+
 /* brojler styles start */
 
 .brojler__cards {
   grid-template-columns: repeat(2, 1fr);
   padding: 0 300px;
-}
-.brojler__card {
-  flex-direction: column-reverse;
-  align-items: center;
-}
-.brojler__card-textbox {
-  padding: 30px 13px;
-  height: 100%;
-  width: 100%;
-}
-.brojler__card-title {
-  text-align: center;
-  line-height: 24px;
-  margin-bottom: 30px;
-}
-.brojler__card-img {
-  padding-top: 10px;
-  object-fit: none;
 }
 
 /* brojler styles end */
@@ -1092,24 +1102,6 @@ h4 {
 .nesushka__cards {
   grid-template-columns: repeat(3, 1fr);
   padding: 0 130px;
-}
-.nesushka__card {
-  flex-direction: column-reverse;
-  align-items: center;
-}
-.nesushka__card-textbox {
-  padding: 30px 13px;
-  height: 100%;
-  width: 100%;
-}
-.nesushka__card-title {
-  text-align: center;
-  line-height: 24px;
-  margin-bottom: 30px;
-}
-.nesushka__card-img {
-  padding-top: 10px;
-  object-fit: none;
 }
 
 /* nesushka styles end */
