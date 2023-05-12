@@ -187,7 +187,7 @@ h4 {
   padding-bottom: 20px;
 }
 .footer__inner {
-  padding: 40px 0 10px;
+  padding: 40px 0;
   display: flex;
   justify-content: space-between;
 }
@@ -244,6 +244,10 @@ h4 {
 .footer__phone-link:hover {
   color: #fff4f4;
 }
+.footer__policy {
+  margin-bottom: 8px;
+}
+.footer__policy,
 .footer__law {
   text-align: center;
   font-size: 14px;
@@ -274,6 +278,40 @@ h4 {
 }
 .not-found__text {
   font-size: 22px;
+  margin-bottom: 20px;
+}
+.not-found__links {
+  display: inline-block;
+  margin: 0 auto;
+  text-align: left;
+}
+.not-found__links li {
+  text-align: left;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  padding-left: 20px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.not-found__links li::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #170f49;
+  position: absolute;
+  top: 35%;
+  left: 0;
+}
+.not-found__link {
+  text-decoration: underline;
+  color: #0037aa;
+}
+.not-found__link:focus,
+.not-found__link:hover {
+  color: #170f49;
 }
 
 /* main styles end */
