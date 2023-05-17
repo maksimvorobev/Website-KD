@@ -494,9 +494,9 @@ h4 {
   left: 0;
 }
 .kombi__cards {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
   margin-bottom: 50px;
 }
@@ -578,13 +578,15 @@ h4 {
   left: 0;
 }
 .bmvd__cards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 43px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
   margin-bottom: 50px;
 }
 .bmvd__card {
   min-height: 300px;
+  max-width: 220px;
   width: auto;
 }
 
@@ -1117,33 +1119,6 @@ h4 {
   object-fit: none;
 }
 
-/* kroliki styles start */
-
-.kroliki__cards {
-  grid-template-columns: repeat(1, 1fr);
-  padding: 0 300px;
-}
-
-/* kroliki styles end */
-
-/* brojler styles start */
-
-.brojler__cards {
-  grid-template-columns: repeat(2, 1fr);
-  padding: 0 300px;
-}
-
-/* brojler styles end */
-
-/* nesushka styles start */
-
-.nesushka__cards {
-  grid-template-columns: repeat(3, 1fr);
-  padding: 0 130px;
-}
-
-/* nesushka styles end */
-
 /* item styles start */
 
 .item {
@@ -1331,3 +1306,8 @@ h4 {
 }
 
 /* item styles end */
+
+@media (max-width: 1320px) {
+  .kombi__cards {
+  }
+}
