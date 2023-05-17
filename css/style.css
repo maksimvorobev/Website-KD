@@ -1138,7 +1138,7 @@ h4 {
 .item__desc {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 40px;
 }
 .item__img-inner {
@@ -1307,7 +1307,8 @@ h4 {
 
 /* item styles end */
 
-@media (max-width: 1320px) {
-  .kombi__cards {
+@media (max-width: 1286px) {
+  .item__title {
+    text-align: center;
   }
 }
