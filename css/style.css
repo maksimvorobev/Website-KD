@@ -59,6 +59,7 @@ h4 {
 .header__inner {
   padding: 6px 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -882,7 +883,7 @@ h4 {
   gap: 10px;
 }
 .about__card_main {
-  max-width: 580px;
+  max-width: 510px;
 }
 .about__title {
   font-weight: 400;
@@ -1307,8 +1308,83 @@ h4 {
 
 /* item styles end */
 
+.menu__btn {
+  width: 32px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+}
+.menu__btn span {
+  height: 3px;
+  background-color: #170f49;
+  border-radius: 10px;
+  width: 100%;
+}
+.menu__btn span:nth-of-type(1) {
+  transform-origin: 0% 0%;
+  transition: transform 0.4s ease-in-out;
+}
+.menu__btn span:nth-of-type(2) {
+  transition: transform 0.2s ease-in-out;
+}
+.menu__btn span:nth-of-type(3) {
+  transform-origin: 0% 100%;
+  transition: transform 0.4s ease-in-out;
+}
+.menu__btn_active span:nth-of-type(1) {
+  transform: rotate(45deg);
+}
+.menu__btn_active span:nth-of-type(2) {
+  transform: scaleY(0);
+}
+.menu__btn_active span:nth-of-type(3) {
+  transform: rotate(-45deg);
+}
+
 @media (max-width: 1286px) {
   .item__title {
     text-align: center;
+  }
+}
+@media (max-width: 1180px) {
+  .header__inner {
+    padding-right: 20px;
+  }
+  .header__info {
+    flex-basis: 50%;
+    justify-content: flex-end;
+  }
+  .menu__btn {
+    display: flex;
+  }
+  .menu__btn,
+  .logo {
+    position: relative;
+    z-index: 10;
+  }
+  .menu__list {
+    position: absolute;
+    background-color: #91ccf4;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 0;
+    right: 0;
+    padding: 180px 50px 0;
+    height: 100vh;
+    max-width: 300px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+  .menu__list.menu__list_active {
+    transform: translateX(0%);
+  }
+  .menu__sublist {
+    padding: 30px 8px 10px;
   }
 }
