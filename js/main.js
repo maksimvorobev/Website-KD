@@ -106,19 +106,3 @@ window.addEventListener("click", (e) => {
     menuBtn.classList.remove("menu__btn_active");
   }
 });
-
-menuList.addEventListener("click", function (e) {
-  const target = e.target;
-  if (target.classList.contains("menu__list-link_drop")) {
-    if (!target.classList.contains("active")) {
-      e.preventDefault();
-    }
-    target.classList.toggle("active");
-  }
-});
-document.addEventListener("mouseup", function (e) {
-  var div = document.querySelector(".menu__list-link_drop.active");
-  if (div !== e.target && div !== null) {
-    div.classList.remove("active");
-  }
-});
