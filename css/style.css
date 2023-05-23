@@ -1401,6 +1401,13 @@ h4 {
   }
 }
 @media (max-width: 1000px) {
+  .advantages__card-title {
+    font-size: 18px;
+  }
+  .advantages__description-title {
+    font-size: 36px;
+    line-height: 54px;
+  }
   .forms__group {
     column-gap: 40px;
   }
