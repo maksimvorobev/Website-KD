@@ -22,6 +22,21 @@ function open(evt) {
     .classList.add("tabs__content-item_active");
 }
 
+const menuBtn = document.querySelector(".menu__btn");
+const menuList = document.querySelector(".menu__list");
+
+menuBtn.addEventListener("click", () => {
+  menuBtn.classList.toggle("menu__btn_active");
+  menuList.classList.toggle("menu__list_active");
+});
+window.addEventListener("click", (e) => {
+  const target = e.target;
+  if (!target.closest(".menu__list") && !target.closest(".menu__btn")) {
+    menuList.classList.remove("menu__list_active");
+    menuBtn.classList.remove("menu__btn_active");
+  }
+});
+
 const scrollController = {
   scrollPosition: 0,
   disabledScroll() {
@@ -90,19 +105,4 @@ popUpController({
   popup: ".popup",
   btnOpen: ".popup__open",
   btnClose: ".popup__close",
-});
-
-const menuBtn = document.querySelector(".menu__btn");
-const menuList = document.querySelector(".menu__list");
-
-menuBtn.addEventListener("click", () => {
-  menuBtn.classList.toggle("menu__btn_active");
-  menuList.classList.toggle("menu__list_active");
-});
-window.addEventListener("click", (e) => {
-  const target = e.target;
-  if (!target.closest(".menu__list") && !target.closest(".menu__btn")) {
-    menuList.classList.remove("menu__list_active");
-    menuBtn.classList.remove("menu__btn_active");
-  }
 });
